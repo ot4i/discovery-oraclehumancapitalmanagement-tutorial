@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policies>
+  <policy policyType="oraclehcm" policyName="OracleHumanCapitalManagement1" policyTemplate="online_v1_basic">
+    <applicationType>online</applicationType>
+    <applicationVersion>v1</applicationVersion>
+    <authenticationMethod>BASIC</authenticationMethod>
+    <endpointUrl>REPLACE_WITH_YOUR_ENDPOINT_URL</endpointUrl>
+    <credentialName>CompletePolicyProjectOracleHumanCapitalManagement_OracleHumanCapitalManagement1</credentialName>
+  </policy>
+</policies>

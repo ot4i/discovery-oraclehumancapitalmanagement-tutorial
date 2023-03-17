@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "WorkerUniqueId": {
+        "displayOrder": 1,
+        "title": "Worker ID",
+        "description": "The unique identifier of the worker",
+        "type": "string"
+      },
+      "names": {
+        "displayOrder": 2,
+        "title": "Names",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "LastName": {
+              "displayOrder": 1,
+              "title": "Last name",
+              "description": "The last name of the worker",
+              "type": "string"
+            },
+            "FirstName": {
+              "displayOrder": 2,
+              "title": "First name",
+              "description": "The first name of the worker",
+              "type": "string"
+            },
+            "LegislationCode": {
+              "displayOrder": 3,
+              "title": "Country",
+              "description": "The country of the worker",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "workRelationships": {
+        "displayOrder": 3,
+        "title": "Work relationships",
+        "description": "The relationship between the person and legal employer",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "LegalEmployerName": {
+              "displayOrder": 1,
+              "title": "Legal employer",
+              "description": "The name of the legal employer of the worker",
+              "type": "string"
+            },
+            "WorkerType": {
+              "displayOrder": 2,
+              "title": "Worker type",
+              "description": "The worker type such as employee, contingent worker, and pending worker",
+              "enum": [
+                "Employee",
+                "Contigent worker",
+                "Pending worker"
+              ],
+              "type": "string"
+            }
+          }
+        }
+      },
+      "PersonId": {
+        "displayOrder": 4,
+        "title": "Person ID",
+        "description": "The unique identifier of the worker",
+        "type": "number"
+      },
+      "PersonNumber": {
+        "displayOrder": 5,
+        "title": "Person number",
+        "description": "The unique worker number",
+        "display": {
+          "nameProperty": true
+        },
+        "type": "string"
+      },
+      "DateOfBirth": {
+        "displayOrder": 6,
+        "title": "Date of birth",
+        "description": " ",
+        "type": "string",
+        "format": "date-time"
+      },
+      "CountryOfBirth": {
+        "displayOrder": 8,
+        "title": "Country of birth",
+        "description": " ",
+        "type": "string"
+      },
+      "RegionOfBirth": {
+        "displayOrder": 9,
+        "title": "Region of birth",
+        "description": " ",
+        "type": "string"
+      },
+      "TownOfBirth": {
+        "displayOrder": 10,
+        "title": "Town of birth",
+        "description": " ",
+        "type": "string"
+      },
+      "CorrespondenceLanguage": {
+        "displayOrder": 11,
+        "title": "Correspondence language",
+        "description": " ",
+        "type": "string"
+      },
+      "BloodType": {
+        "displayOrder": 12,
+        "title": "Blood type",
+        "description": " ",
+        "type": "string"
+      },
+      "ApplicantNumber": {
+        "displayOrder": 13,
+        "title": "Applicant number",
+        "description": " ",
+        "type": "string"
+      },
+      "AdditionalProperties": {
+        "displayOrder": 17,
+        "title": "Additional properties",
+        "description": "The additional properties of the worker",
+        "type": "object"
+      },
+      "DisplayName": {
+        "displayOrder": 14,
+        "title": "Display name",
+        "description": "Person's display name.",
+        "type": "string"
+      },
+      "FullName": {
+        "displayOrder": 15,
+        "title": "Full name",
+        "description": "Person's full name.",
+        "type": "string"
+      },
+      "ListName": {
+        "displayOrder": 16,
+        "title": "List name",
+        "description": "Person's list name.",
+        "type": "string"
+      }
+    },
+    "title": "worker"
+  },
+  "type": "array",
+  "title": "worker"
+}
